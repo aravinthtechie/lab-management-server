@@ -44,5 +44,10 @@ public class PatientController {
                 patientService.searchPatients(name)
         );
     }
+    @GetMapping("/test")
+    public ResponseEntity<String> test()
+    {
+        return new ResponseEntity("Api is working!!!1",HttpStatus.OK);
+    }
 
 }
